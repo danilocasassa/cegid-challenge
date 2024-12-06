@@ -1,0 +1,24 @@
+{
+    "name": "e2e-test-cegid-challenge",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "test:open": "cypress open",
+        "test": "cypress run",
+        "setup:qa": "node ./tools/setup.js --qa",
+        "setup:prod": "node ./tools/setup.js"
+    },
+    "keywords": [],
+    "author": "Danilo Casassa",
+    "license": "ISC",
+    "description": "This project is a challenge created by CEGID.",
+    "devDependencies": {
+        "axios": "^1.7.9",
+        "cypress": "^13.16.1",
+        "cypress-mochawesome-reporter": "^3.8.2",
+        "dotenv": "^16.4.7",
+        "mochawesome": "^7.1.3",
+        "mochawesome-merge": "^4.3.0",
+        "mochawesome-report-generator": "^6.2.0"
+    }
+}
