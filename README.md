@@ -46,7 +46,6 @@ Run the script to create the setup for **QA** or **PROD** environment
 
 QA Environment:
 ```bash
-cd .\e2e-tests\
 npm run setup:qa
 ```
 
@@ -55,16 +54,16 @@ npm run setup:qa
 Scenario:
 
 1. Access the website https://www.demoblaze.com/
-2. Login using the username 'admin' e password 'admin’.
+2. Login using the username 'admin' and password 'admin’.
 3. Add the 'Iphone 6 32Gb’ phone to the shopping cart.
 4. Add the 'ASUS Full HD’ monitor to the shopping cart
 5. Place the order
 
-You can run the test above using 2 option, headed or headless mode.
+You can run the test above using 2 options, headed or headless mode.
 
-Running `npm run test` you will run the test in headless mode, only the results will be shown into console log.
+Running `npm run test` you will run the test in headless mode, only the results will be shown into the console log.
 
-Running `npm run test:headed`, the browser will be open and you will be able to see the script execution in action
+Running `npm run test:headed`, the browser will open and you will be able to see the script execution in action
 
 After the run is completed, you will be able to see the results of the test on the terminal console. 
 
@@ -127,9 +126,9 @@ For this part of the challenge, I created a script in **Javascript** language us
 
 ### The challenge
 
-Create a method, in the language of your choice, to detect if a string is palindrome - reads the same backward or forward.
+Create a method, in the language of your choice, to detect if a string is a palindrome - reads the same backwards or forward.
 
-Example of palindrome words: kayak, deified, rotator
+Examples of palindrome words: kayak, deified, rotator
 
 Input: String to validate
 
@@ -149,7 +148,7 @@ You can check if any word is a Palindrome or if any phrase is a palindrome as we
 node .\isPalindrome.js "Socorram-me, subi no ônibus em Marrocos."
 ```
 
-To get the response of this execution is TRUE or FALSE, you must add the code `echo $?`.
+To get the response of this execution as TRUE or FALSE, you must add the code `echo $?`.
 ```bash
 node .\isPalindrome.js "Socorram-me, subi no ônibus em Marrocos."
 echo $?
