@@ -61,9 +61,15 @@ Scenario:
 
 You can run the test above using 2 options, headed or headless mode.
 
-Running `npm run test` you will run the test in headless mode, only the results will be shown into the console log.
+Running `npm run test` you will run the test in headless mode, only the results will be shown in the console log:
+```bash
+npm run test
+```
 
-Running `npm run test:headed`, the browser will open and you will be able to see the script execution in action
+Running `npm run test:headed`, the browser will open and you will be able to see the script execution in action:
+```bash
+npm run test:headed
+```
 
 After the run is completed, you will be able to see the results of the test on the terminal console. 
 
@@ -105,14 +111,19 @@ Scenario:
 2. Get the newly created user to check that it was created successfully
 3. Delete the user
 
-To run the test, run the command `pytest`
+To run the test, run the command:
+```bash
+python -m pytest -v
+```
 
 The test will be executed and you can see the results in the console terminal. 
 
 ![image](https://github.com/user-attachments/assets/9ffc4e0a-451f-4b10-a929-140f44d0158e)
 
 To run the tests and generate a report html file, you have to run the command
-`pytest --html=report.html`
+```bash
+python -m pytest --html=report.html -v
+```
 
 After the run is completed, a reporter file html will be created into the root folder `api-tests/report.html`
 
