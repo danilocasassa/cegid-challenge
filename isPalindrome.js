@@ -14,12 +14,13 @@ function isPalindrome(text) {
 
 if (inputText) {
     if (isPalindrome(inputText)) {
-        console.log(`\x1b[36m"${inputText}" \x1b[32m is a palindrome`);
+        console.log(`\x1b[36m"${inputText}" \x1b[32m is a palindrome\x1b[0m`);
+        process.exit(0);
     } else {
-        console.log(`\x1b[33m"${inputText}" \x1b[31m is NOT a palindrome`);
+        console.log(`\x1b[33m"${inputText}" \x1b[31m is NOT a palindrome\x1b[0m`);
+        process.exit(1);
     }
 } else {
-    console.log("\x1b[33mNo words to verify, please type any word and try again. \n     \x1b[90m`node isPalindrome WORDHERE` or \n     `node isPalindrome 'PHRASE HERE'");
+    console.log("\x1b[33mNo words to verify, please type any word and try again. \n     \x1b[90m`node isPalindrome WORDHERE` or \n     `node isPalindrome 'PHRASE HERE'\x1b[0m");
+    process.exit(1);
 }
-
-console.log("\x1b[0m");

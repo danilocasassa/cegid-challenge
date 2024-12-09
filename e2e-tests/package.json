@@ -5,6 +5,7 @@
     "scripts": {
         "test:open": "cypress open",
         "test": "cypress run",
+        "test:headed": "cypress run --headed",
         "setup:qa": "node ./tools/setup.js --qa",
         "setup:prod": "node ./tools/setup.js"
     },
